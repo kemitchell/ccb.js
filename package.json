@@ -8,11 +8,7 @@
   ],
   "license": "MIT",
   "repository": "kemitchell/ecb.js",
-  "devDependencies": {
-    "defence-cli": "^2.0.0",
-    "replace-require-self": "^1.1.1"
-  },
   "scripts": {
-    "test": "defence -i javascript README.md | replace-require-self | node"
+    "test": "node test.js"
   }
 }

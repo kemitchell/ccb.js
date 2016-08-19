@@ -1,24 +1,19 @@
 ```javascript
 var ecb = require('ecb')
-var assert = require('assert')
-var fs = require('fs')
 
-fs.stat('non-existent', ecb(onError, onSuccess))
-fs.stat('package.json', ecb(onError, onSuccess))
+doSomething(ecb(done, function (result) {
+  console.log(result)
+})
+```
 
-var errored = false
-var succeeded = false
+is short for
 
-function onError (error) {
-  errored = true
-}
-
-function onSuccess (result) {
-  succeeded = true
-}
-
-process.on('exit', function () {
-  assert(errored)
-  assert(succeeded)
+```javascript
+doSomething(function (error, result) {
+  if (error) {
+    done(error)
+  } else {
+    console.log(result)
+  }
 })
 ```
