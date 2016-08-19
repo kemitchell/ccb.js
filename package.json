@@ -1,7 +1,7 @@
 {
   "name": "ecb",
   "description": "create error-first callbacks from separate error and success handlers",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com/)",
   "files": [
     "index.js"
