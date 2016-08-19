@@ -1,4 +1,4 @@
-module.exports = function ccb (onError, onSuccess) {
+module.exports = function ecb (onError, onSuccess) {
   return function () {
     if (arguments[0]) {
       onError.apply(null, arguments)

@@ -1,10 +1,10 @@
 ```javascript
-var ccb = require('ccb')
+var ecb = require('ecb')
 var assert = require('assert')
 var fs = require('fs')
 
-fs.stat('non-existent', ccb(onError, onSuccess))
-fs.stat('package.json', ccb(onError, onSuccess))
+fs.stat('non-existent', ecb(onError, onSuccess))
+fs.stat('package.json', ecb(onError, onSuccess))
 
 var errored = false
 var succeeded = false

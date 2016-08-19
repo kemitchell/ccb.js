@@ -1,5 +1,5 @@
 {
-  "name": "ccb",
+  "name": "ecb",
   "description": "create error-first callbacks from separate error and success handlers",
   "version": "0.0.0",
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com/)",
@@ -7,7 +7,7 @@
     "index.js"
   ],
   "license": "MIT",
-  "repository": "kemitchell/ccb.js",
+  "repository": "kemitchell/ecb.js",
   "devDependencies": {
     "defence-cli": "^2.0.0",
     "replace-require-self": "^1.1.1"
